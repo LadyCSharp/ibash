@@ -4,7 +4,7 @@ import time
 import os
 from parser_ibash import pibash
 
-TOKEN='5203104381:AAHmxnTLcCpMc9LlACMfwJW6CUEAheEssKs'
+TOKEN='sensored'
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
