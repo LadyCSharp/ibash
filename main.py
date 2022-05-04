@@ -24,7 +24,13 @@ while len(rezult) <= N:
                 break  #без него одна цитата может попасть в список несколько раз
 
 i=1
-for rez in rezult:
-    print(i)
-    i += 1
-    print(rez.get_text())
+with open('text.txt', 'wt') as f:
+    for rez in rezult:
+        print(i)
+
+        print(rez.get_text())
+
+        f.write(str(i)+" ")
+        f.write(rez.get_text())
+        f.write('\n')
+        i += 1
