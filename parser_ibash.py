@@ -18,7 +18,7 @@ def pibash(keywords):
         quotes = soup.find_all(class_ = 'quotbody')
 
         for quote in quotes:
-            q=str(quote)
+            q=str(quote).lower()
             for kw in keywords:
                 if kw in q:
                     rezult.append(quote)
